@@ -61,7 +61,7 @@ export default function Home() {
           <span className="loader">Load&nbsp;ng</span>
         ) : (
           <div className={` ${show ? "block" : "hidden"} animated fadeIn`}>
-            <Results show={show} urlResult={urlResult} />;
+            <Results show={show} urlResult={urlResult} />
           </div>
         )}
         <Info />
