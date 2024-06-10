@@ -3,7 +3,7 @@ import Image from "next/image"
 export const Footer = () => {
   const icons = [
     {
-      path: "https://github.com/Reyes1921",
+      path: "https://github.com/Reyes1921/shortner-url",
       src: "/github.svg",
       title: "Github",
       alt: '"github logo',

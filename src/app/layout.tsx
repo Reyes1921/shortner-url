@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Shortner Url",
   description: "Acortador de links rapido y fácil",
   alternates: {
-    canonical: "http://www.example.com/",
+    canonical: "https://shortner-url-fast.vercel.app/",
   },
 }
 
