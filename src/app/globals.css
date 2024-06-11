@@ -53,12 +53,12 @@ body {
 }
 
 .textColor {
-  color: #ff4400;
+  color: #ff6d28;
 }
 
 .delete-button {
   background-color: #000;
-  color: #ff4400;
+  color: #ff6d28;
   font-size: 17px;
   border: 0.5px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 7px;
@@ -206,7 +206,7 @@ body {
   left: 125px;
   top: 2px;
   border-radius: 50%;
-  background: #ff4400;
+  background: #ff6d28;
   box-sizing: border-box;
   animation: animloader 1s linear infinite alternate;
 }

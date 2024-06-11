@@ -33,7 +33,7 @@ export const Info = () => {
             height={100}
             alt={item.alt}
           />
-          <h3 className="text-center text-2xl text-[#ff4400]">{item.title}</h3>
+          <h3 className="text-center text-2xl text-[#ff6d28]">{item.title}</h3>
           <p className="text-center text-base"> {item.desc}</p>
         </div>
       ))}
