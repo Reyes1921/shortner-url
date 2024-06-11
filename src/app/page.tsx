@@ -42,7 +42,7 @@ export default function Home() {
       </a>
       <div className="flex flex-col items-center justify-between">
         <form onSubmit={submitRequest}>
-          <div className="relative flex  justify-between">
+          <div className="relative md:flex justify-between">
             <div className="relative h-10">
               <input
                 type="text"
@@ -52,7 +52,11 @@ export default function Home() {
                 value={inputValue}
               />
             </div>
-            <button className="delete-button ml-3">Shorten Url</button>
+            <div className="flex justify-center">
+              <button className="delete-button ml-3 p-2 mt-10 md:mt-0">
+                Shorten Url
+              </button>
+            </div>
           </div>
         </form>
         {error ? (

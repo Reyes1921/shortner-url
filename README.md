@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/Reyes1921/shortner-url/blob/main/README.md)
+[![es](https://img.shields.io/badge/lang-es-yellow.svg)](https://github.com/Reyes1921/shortner-url/blob/main/README.es.md)
+
+<h1 style="color: #ff4400">Shortner Url</h1>
+
+Application to shorten links in an easy and fast way with tracking of the number of times the shortened link is used. Take a look [shortner-url-fast](https://shortner-url-fast.vercel.app/)
+
+## Functionalities
+
+- Shorten very large links
+
+- Tracking the number of times the shortened link is used
+
+## Technologies used
+
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+
+## Backend repository page
+
+[backend-shortner-url](https://github.com/Reyes1921/backend-shortner-url/blob/main/README.md)
 
 ## Getting Started
 
 First, run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Application opens on port 3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<img src='./public//wallpaper.webp'>
+<div align="center">
+![NPM Badge](https://img.shields.io/npm/v/npm.svg?logo=npm)
+</div>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Contact
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- E-mail address: reyesjrondon@gmail.com
+- [Portfolio](https://reyesrondon.vercel.app/)
+- [Linkedin](https://www.linkedin.com/in/reyes-rondon/?locale=en_US)
