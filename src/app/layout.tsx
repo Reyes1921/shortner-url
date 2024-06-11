@@ -9,6 +9,9 @@ const inter = Bakbak_One({weight: "400", subsets: ["latin"]})
 export const metadata: Metadata = {
   title: "Shortner Url",
   description: "Acortador de links rapido y fácil",
+  icons: {
+    icon: "/favicon.ico",
+  },
   alternates: {
     canonical: "https://shortner-url-fast.vercel.app/",
   },
