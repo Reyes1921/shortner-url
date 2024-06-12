@@ -1,15 +1,17 @@
 import Image from "next/image"
+import {useTranslations} from "next-intl"
 
 export const Footer = () => {
+  const dict = useTranslations("Footer")
   const icons = [
     {
-      path: "https://github.com/Reyes1921/shortner-url",
+      path: dict("github"),
       src: "/github.svg",
       title: "Github",
       alt: '"github logo',
     },
     {
-      path: "https://www.linkedin.com/in/reyes-rondon/",
+      path: dict("linkedin"),
       src: "/linkedin.svg",
       title: "Linkedin",
       alt: '"linkedin logo',

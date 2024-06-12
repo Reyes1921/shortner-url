@@ -1,5 +1,6 @@
-import {UrlResponse} from "@/app/interfaces/urls"
+import {UrlResponse, Titles} from "@/app/interfaces/urls"
 import {ClipboardCopy} from "@patternfly/react-core"
+import {useTranslations} from "next-intl"
 
 type ResultsProps = {
   show: boolean
@@ -7,11 +8,12 @@ type ResultsProps = {
 }
 
 export const Results: React.FC<ResultsProps> = ({show, urlResult}) => {
+  const results = useTranslations("Results")
   return (
     <>
       <div className="flex flex-col justify-center items-center">
         <h3 className="text-xl textColor font-bold mt-5 text-center ">
-          New Shortened Url
+          {results("title_one")}
         </h3>
         <code
           className={` ${
@@ -34,13 +36,13 @@ export const Results: React.FC<ResultsProps> = ({show, urlResult}) => {
       </div>
       <div>
         <h3 className="text-xl font-bold mt-5 text-center textColor">
-          Long Url
+          {results("title_two")}
         </h3>
         <div id="result" className="mt-2 w-full break-all">
           <p className="text-center">{urlResult?.originalUrl}</p>
         </div>
         <h3 className="text-xl font-bold mt-5 text-center textColor">
-          Total of clicks
+          {results("title_three")}
         </h3>
         <div id="result" className="mt-2 w-full break-all">
           <p className="text-center">{urlResult?.clicks}</p>

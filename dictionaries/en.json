@@ -1,0 +1,26 @@
+{
+  "Home": {
+    "button": "Shorten Url",
+    "loading": "Loading"
+  },
+  "Results": {
+    "title_one": "New Shortened Url",
+    "title_two": "Long Url",
+    "title_three": "Total of clicks"
+  },
+  "Info": {
+    "easy_title": "Easy",
+    "easy_desc": "Easy and fast, enter a long link and get a short one",
+    "alt_easy": "Handshake logo",
+    "shortened_title": "Shortened",
+    "shortened_desc": "Makes long links look cleaner and easier to share!",
+    "alt_shortened": "Links logo",
+    "statistics_title": "Statistics",
+    "statistics_desc": "Tracks the number of clicks",
+    "alt_statistics": "Stats logo"
+  },
+  "Footer": {
+    "github": "https://github.com/Reyes1921/shortner-url/blob/main/README.md",
+    "linkedin": "https://www.linkedin.com/in/reyes-rondon/?locale=en_US"
+  }
+}

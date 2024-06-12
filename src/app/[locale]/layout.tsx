@@ -1,8 +1,9 @@
+import "./global.css"
 import type {Metadata} from "next"
 import {Bakbak_One} from "next/font/google"
-import "./globals.css"
-import {Footer} from "./components/footer/Footer"
-import Head from "next/head"
+import {Footer} from "../components/footer/Footer"
+import {NextIntlClientProvider} from "next-intl"
+import {getMessages} from "next-intl/server"
 
 const inter = Bakbak_One({weight: "400", subsets: ["latin"]})
 
@@ -17,21 +18,25 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+interface RootLayoutProps {
   children: React.ReactNode
-}>) {
+  params: {locale: string}
+}
+
+export default async function RootLayout({
+  children,
+  params: {locale},
+}: Readonly<RootLayoutProps>) {
+  const dictionaries = await getMessages()
   return (
     <html
-      lang="en"
+      lang={locale}
       className="flex min-h-screen flex-col items-center  p-10 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#0d0d0d] via-gray-900 to-black"
     >
-      <Head>
-        <link rel="icon" href="./links.svg" />
-      </Head>
       <body className={inter.className}>
-        {children}
+        <NextIntlClientProvider messages={dictionaries}>
+          {children}
+        </NextIntlClientProvider>
         <Footer />
       </body>
     </html>

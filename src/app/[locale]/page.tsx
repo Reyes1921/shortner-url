@@ -1,10 +1,12 @@
 "use client"
 import {useState} from "react"
-import {url} from "./api/url"
-import {Error, Info, Results} from "./components"
-import {UrlResponse} from "./interfaces/urls"
+import {url} from "../api/url"
+import {Error, Info, Results} from "../components"
+import {UrlResponse} from "../interfaces/urls"
+import {useTranslations} from "next-intl"
 
 export default function Home() {
+  const dict = useTranslations("Home")
   const [urlResult, setUrlResult] = useState<UrlResponse>()
   const [inputValue, setInputValue] = useState("")
   const [error, setError] = useState<any>(null)
@@ -32,7 +34,6 @@ export default function Home() {
       setShow(false)
     }
   }
-
   return (
     <div className="main">
       <a href="/">
@@ -54,7 +55,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center">
               <button className="delete-button ml-3 p-2 mt-10 md:mt-0">
-                Shorten Url
+                {dict("button")}
               </button>
             </div>
           </div>
@@ -62,7 +63,7 @@ export default function Home() {
         {error ? (
           <Error message={error.response.data} />
         ) : loading ? (
-          <span className="loader">Load&nbsp;ng</span>
+          <span className="loader">{dict("loading")}</span>
         ) : (
           <div className={` ${show ? "block" : "hidden"} animated fadeIn`}>
             <Results show={show} urlResult={urlResult} />

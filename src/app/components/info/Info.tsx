@@ -1,25 +1,27 @@
-import React from "react"
 import Image from "next/image"
+import {useTranslations} from "next-intl"
 
 export const Info = () => {
+  const info = useTranslations("Info")
+
   const icons = [
     {
       path: "/handshake.svg",
-      title: "Easy",
-      desc: "Easy and fast, enter a long link and get a short one",
-      alt: "Handshake logo",
+      title: info("easy_title"),
+      desc: info("easy_desc"),
+      alt: info("alt_easy"),
     },
     {
       path: "/links.svg",
-      title: "Shortened",
-      desc: "Makes long links look cleaner and easier to share!",
-      alt: "Links logo",
+      title: info("shortened_title"),
+      desc: info("shortened_desc"),
+      alt: info("alt_shortened"),
     },
     {
       path: "/stats.svg",
-      title: "Statistics",
-      desc: "Tracks the number of clicks",
-      alt: "Stats logo",
+      title: info("statistics_title"),
+      desc: info("statistics_desc"),
+      alt: info("alt_statistics"),
     },
   ]
   return (

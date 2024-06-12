@@ -1,0 +1,26 @@
+{
+  "Home": {
+    "button": "Acortar Url",
+    "loading": "Cargando"
+  },
+  "Results": {
+    "title_one": "Nuevo Enlace Acortado",
+    "title_two": "Enlace largo",
+    "title_three": "Total de clics"
+  },
+  "Info": {
+    "easy_title": "Fácil",
+    "easy_desc": "Fácil y rápido, introduce un enlace largo y obtén uno corto",
+    "alt_easy": "Logo de dar la mano",
+    "shortened_title": "Acortado",
+    "shortened_desc": "Hace que los enlaces largos parezcan más limpios y fáciles de compartir.",
+    "alt_shortened": "Logo de enlaces",
+    "statistics_title": "Estadísticas",
+    "statistics_desc": "Seguimiento del número de clics",
+    "alt_statistics": "Logo de estadísticas"
+  },
+  "Footer": {
+    "github": "https://github.com/Reyes1921/shortner-url/blob/main/README.es.md",
+    "linkedin": "https://www.linkedin.com/in/reyes-rondon/"
+  }
+}

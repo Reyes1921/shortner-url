@@ -1,0 +1,12 @@
+{
+  "button": [
+    {
+      "locale": "/en",
+      "text": "Shorten Url"
+    },
+    {
+      "locale": "/es",
+      "text": "Acortar Url"
+    }
+  ]
+}
