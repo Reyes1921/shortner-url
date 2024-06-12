@@ -35,7 +35,7 @@ export default function Home() {
     }
   }
   return (
-    <div className="main">
+    <div className="main animated fadeIn">
       <a href="/">
         <h1 className="text-5xl md:text-8xl mb-10 mt-10 font-bold text-center textColor">
           Shortner Url
@@ -61,7 +61,7 @@ export default function Home() {
           </div>
         </form>
         {error ? (
-          <Error message={error.response.data} />
+          <Error />
         ) : loading ? (
           <span className="loader">{dict("loading")}</span>
         ) : (

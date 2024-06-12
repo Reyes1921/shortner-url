@@ -1,4 +1,10 @@
 {
+  "Header": {
+    "path": "/en",
+    "title": "Español",
+    "logo": "/es.svg",
+    "alt": "Bandera de España"
+  },
   "Home": {
     "button": "Acortar Url",
     "loading": "Cargando"
@@ -22,5 +28,8 @@
   "Footer": {
     "github": "https://github.com/Reyes1921/shortner-url/blob/main/README.es.md",
     "linkedin": "https://www.linkedin.com/in/reyes-rondon/"
+  },
+  "Error": {
+    "error": "Url inválida por favor intente una con un patrón válido, Ejemplo: https://www.example.com/"
   }
 }

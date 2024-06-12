@@ -1,4 +1,10 @@
 {
+  "Header": {
+    "path": "/es",
+    "title": "English",
+    "logo": "/us.svg",
+    "alt": "Flag of United States"
+  },
   "Home": {
     "button": "Shorten Url",
     "loading": "Loading"
@@ -22,5 +28,8 @@
   "Footer": {
     "github": "https://github.com/Reyes1921/shortner-url/blob/main/README.md",
     "linkedin": "https://www.linkedin.com/in/reyes-rondon/?locale=en_US"
+  },
+  "Error": {
+    "error": "Invalid url please try one with a valid pattern, Example: https://www.example.com/"
   }
 }

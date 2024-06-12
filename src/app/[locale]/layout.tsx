@@ -4,6 +4,7 @@ import {Bakbak_One} from "next/font/google"
 import {Footer} from "../components/footer/Footer"
 import {NextIntlClientProvider} from "next-intl"
 import {getMessages} from "next-intl/server"
+import {Header} from "../components/header/Header"
 
 const inter = Bakbak_One({weight: "400", subsets: ["latin"]})
 
@@ -31,9 +32,10 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      className="flex min-h-screen flex-col items-center  p-10 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#0d0d0d] via-gray-900 to-black"
+      className="flex min-h-screen flex-col items-center p-10 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#0d0d0d] via-gray-900 to-black"
     >
       <body className={inter.className}>
+        <Header />
         <NextIntlClientProvider messages={dictionaries}>
           {children}
         </NextIntlClientProvider>

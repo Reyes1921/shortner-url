@@ -32,7 +32,7 @@ npm run dev
 
 Application opens on port 3000
 
-<img src='./public//wallpaper.webp'>
+<img src='./public//wallpaper-en.webp'>
 <div align="center">
 
 ![Static Badge](https://img.shields.io/badge/NextJs-000000?style=flat&logo=nextdotjs&logoColor=ffffff)

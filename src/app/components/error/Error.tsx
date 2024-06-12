@@ -1,10 +1,7 @@
-import React from "react"
+import {useTranslations} from "next-intl"
 
-export interface Props {
-  message: string
-}
-
-export const Error = ({message}: Props) => {
+export const Error = () => {
+  const dict = useTranslations("Error")
   return (
     <div className="px-10">
       <div
@@ -12,7 +9,7 @@ export const Error = ({message}: Props) => {
         role="alert"
       >
         <strong className="font-bold">Ooops! </strong>
-        <span className="block sm:inline">{message}</span>
+        <span className="block sm:inline">{dict("error")}</span>
       </div>
     </div>
   )

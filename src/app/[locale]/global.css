@@ -209,3 +209,22 @@ body {
     min-height: calc(100vh - 14vh);
   }
 }
+
+.button-flag {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.3em 0.8em 0.9em;
+  color: white;
+  border: 2px solid transparent;
+  letter-spacing: 0.05em;
+  border-radius: 16px;
+}
+
+.delete-button:hover,
+.button-flag:hover {
+  border: #ff6d28 2px solid;
+}
