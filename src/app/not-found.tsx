@@ -15,7 +15,7 @@ export default function NotFound() {
             <Link href="/">
               <button className="button-error m-5 border-2 border-[#ff6d28]">
                 <span className="text-sm flex justify-center items-center">
-                  Return Home
+                  Go Back / Atrás
                 </span>
               </button>
             </Link>
