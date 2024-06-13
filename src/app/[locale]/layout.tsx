@@ -1,7 +1,7 @@
 import "./global.css"
 import {Bakbak_One} from "next/font/google"
-import {Header} from "../components/header/Header"
 import {Footer} from "../components/footer/Footer"
+import {Header} from "../components/header/Header"
 import {NextIntlClientProvider} from "next-intl"
 import {getMessages, getTranslations} from "next-intl/server"
 
