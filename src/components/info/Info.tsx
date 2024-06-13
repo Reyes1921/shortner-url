@@ -25,7 +25,7 @@ export const Info = () => {
     },
   ]
   return (
-    <div className="grid md:grid-cols-3 md:max-w-[850px] px-20 py-10">
+    <div className="grid md:grid-cols-3 md:max-w-[850px] px-20 py-10 ">
       {icons.map((item) => (
         <div key={item.title} className="flex flex-col items-center p-5">
           <Image

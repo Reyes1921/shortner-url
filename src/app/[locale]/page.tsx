@@ -1,7 +1,7 @@
 "use client"
 import {useState} from "react"
 import {url} from "../api/url"
-import {Error, Info, Results} from "../components"
+import {Error, Info, Results} from "../../components"
 import {UrlResponse} from "../interfaces/urls"
 import {useTranslations} from "next-intl"
 
@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <div className="main animated fadeIn">
       <a href="/">
-        <h1 className="text-5xl md:text-8xl mb-5 md:mb-5 md:mt-5  font-bold text-center textColor">
+        <h1 className="text-5xl md:text-8xl mb-5 md:mb-5 md:mt-5 font-bold text-center textColor">
           Shortner Url
         </h1>
       </a>

@@ -1,7 +1,7 @@
 import "./global.css"
 import {Bakbak_One} from "next/font/google"
-import {Footer} from "../components/footer/Footer"
-import {Header} from "../components/header/Header"
+import {Footer} from "../../components/footer/Footer"
+import {Header} from "../../components/header/Header"
 import {NextIntlClientProvider} from "next-intl"
 import {getMessages, getTranslations} from "next-intl/server"
 
@@ -39,7 +39,7 @@ export default async function RootLayout({
   return (
     <html
       lang={locale}
-      className="flex min-h-screen flex-col items-center p-10 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#0d0d0d] via-gray-900 to-black"
+      className="flex min-h-screen flex-col justify-center items-center p-5 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#0d0d0d] via-gray-900 to-black"
     >
       <body className={inter.className}>
         <Header />

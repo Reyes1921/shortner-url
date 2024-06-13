@@ -27,7 +27,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/[locale]/not-found.js",
-    "src/app/[locale]/not-found.tsx"
+    "src/app/[locale]/old-not-found.tsx"
   ],
   "exclude": ["node_modules"]
 }

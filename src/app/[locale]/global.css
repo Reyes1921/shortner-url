@@ -42,8 +42,8 @@ body {
 }
 
 .animated {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -201,7 +201,7 @@ body {
 }
 
 .main {
-  min-height: calc(100vh - 20vh);
+  min-height: calc(100vh - 22.5vh);
 }
 
 @media screen and (max-width: 768px) {
@@ -220,6 +220,20 @@ body {
   padding: 0.8em 1.3em 0.8em 0.9em;
   color: white;
   border: 2px solid transparent;
+  letter-spacing: 0.05em;
+  border-radius: 16px;
+}
+
+.button-error {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 1rem;
+  color: white;
+  border: 2px solid #ff6d28;
   letter-spacing: 0.05em;
   border-radius: 16px;
 }
