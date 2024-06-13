@@ -1,11 +1,11 @@
 import Link from "next/link"
-import {useTranslations} from "next-intl"
 import Image from "next/image"
+import {useTranslations} from "next-intl"
 
 export const Header = () => {
   const dict = useTranslations("Header")
   return (
-    <header className="md:max-w-[850px] relative w-full bottom-0 mx-auto left-0 right-0 pr-5 pb-5">
+    <header className="md:max-w-[850px] relative w-full bottom-0 mx-auto left-0 right-0 md:pr-5 pb-1 mb-0">
       <Link href={dict("path")} className="flex justify-center md:justify-end">
         <button className="button-flag">
           <Image

@@ -1,23 +1,30 @@
 import "./global.css"
-import type {Metadata} from "next"
 import {Bakbak_One} from "next/font/google"
+import {Header} from "../components/header/Header"
 import {Footer} from "../components/footer/Footer"
 import {NextIntlClientProvider} from "next-intl"
-import {getMessages} from "next-intl/server"
-import {Header} from "../components/header/Header"
+import {getMessages, getTranslations} from "next-intl/server"
+
+interface RootMetadata {
+  params: {locale: string}
+}
+
+export async function generateMetadata({params}: RootMetadata) {
+  const t = await getTranslations({params, namespace: "Metadata"})
+
+  return {
+    description: t("description"),
+    title: "Shortner Url",
+    icons: {
+      icon: "/favicon.ico",
+    },
+    alternates: {
+      canonical: "https://shortner-url-fast.vercel.app/",
+    },
+  }
+}
 
 const inter = Bakbak_One({weight: "400", subsets: ["latin"]})
-
-export const metadata: Metadata = {
-  title: "Shortner Url",
-  description: "Acortador de links rapido y fácil",
-  icons: {
-    icon: "/favicon.ico",
-  },
-  alternates: {
-    canonical: "https://shortner-url-fast.vercel.app/",
-  },
-}
 
 interface RootLayoutProps {
   children: React.ReactNode

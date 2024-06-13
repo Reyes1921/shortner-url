@@ -1,4 +1,4 @@
-import {UrlResponse, Titles} from "@/app/interfaces/urls"
+import {UrlResponse} from "@/app/interfaces/urls"
 import {ClipboardCopy} from "@patternfly/react-core"
 import {useTranslations} from "next-intl"
 

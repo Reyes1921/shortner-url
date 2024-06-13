@@ -1,4 +1,7 @@
 {
+  "Metadata": {
+    "description": "Quick and easy link shortener"
+  },
   "Header": {
     "path": "/es",
     "title": "English",
