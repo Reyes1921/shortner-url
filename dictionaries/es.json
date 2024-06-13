@@ -10,7 +10,8 @@
   },
   "Home": {
     "button": "Acortar Url",
-    "loading": "Cargando"
+    "loading": "Cargando",
+    "path": "/es"
   },
   "Results": {
     "title_one": "Nuevo Enlace Acortado",

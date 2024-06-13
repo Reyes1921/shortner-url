@@ -10,7 +10,8 @@
   },
   "Home": {
     "button": "Shorten Url",
-    "loading": "Loading"
+    "loading": "Loading",
+    "path": "/en"
   },
   "Results": {
     "title_one": "New Shortened Url",
