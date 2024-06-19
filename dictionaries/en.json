@@ -16,7 +16,9 @@
   "Results": {
     "title_one": "New Shortened Url",
     "title_two": "Long Url",
-    "title_three": "Total of clicks"
+    "title_three": "Total of clicks",
+    "copy": "Copy",
+    "copied": "Copied"
   },
   "Info": {
     "easy_title": "Easy",

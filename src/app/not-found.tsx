@@ -1,11 +1,6 @@
 import Link from "next/link"
-import {cookies} from "next/headers"
 
 export default function NotFound() {
-  const cookieStore = cookies()
-  const theme = cookieStore.has("NEXT_LOCALE")
-  console.log(theme)
-  if (theme === undefined) console.log("yessss")
   return (
     <html className="flex flex-col justify-center items-center min-h-screen bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#0d0d0d] via-gray-900 to-black">
       <body>

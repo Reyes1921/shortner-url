@@ -16,7 +16,9 @@
   "Results": {
     "title_one": "Nuevo Enlace Acortado",
     "title_two": "Enlace largo",
-    "title_three": "Total de clics"
+    "title_three": "Total de clics",
+    "copy": "Copiar",
+    "copied": "Copiado"
   },
   "Info": {
     "easy_title": "Fácil",

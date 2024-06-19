@@ -24,8 +24,8 @@ export const Results: React.FC<ResultsProps> = ({show, urlResult}) => {
             <span className="flex-1 w-full md:w-[400px]">
               <ClipboardCopy
                 isReadOnly
-                hoverTip="Copy"
-                clickTip="Copied"
+                hoverTip={results("copy")}
+                clickTip={results("copied")}
                 className="clipboardInput"
               >
                 {urlResult?.shortUrl || ""}
