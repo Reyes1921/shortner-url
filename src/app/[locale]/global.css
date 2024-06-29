@@ -242,3 +242,25 @@ body {
 .button-flag:hover {
   border: #ff6d28 2px solid;
 }
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #ff6d28c2 #111827;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ff6d28c2;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}

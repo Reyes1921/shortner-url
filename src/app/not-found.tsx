@@ -8,8 +8,8 @@ export default function NotFound() {
           <div className="flex flex-col justify-center items-center">
             <p className="text-9xl font-bold text-[#ff6d28]">404</p>
             <Link href="/">
-              <button className="button-error m-5 border-2 border-[#ff6d28]">
-                <span className="text-sm flex justify-center items-center">
+              <button className="button-error m-5 border-2 border-[#ff6d28] hover:scale-90 ease-in-out duration-500">
+                <span className="text-sm flex justify-center items-center ">
                   Go Back / Atrás
                 </span>
               </button>

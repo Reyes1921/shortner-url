@@ -9,14 +9,16 @@ export default function Home() {
   const dict = useTranslations("Home")
   const [urlResult, setUrlResult] = useState<UrlResponse>()
   const [inputValue, setInputValue] = useState("")
-  const [error, setError] = useState<any>(null)
+  const [error, setError] = useState(false)
   const [show, setShow] = useState(false)
   const [loading, setLoading] = useState(false)
 
+  //Input change
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value)
   }
 
+  //Submit request
   const submitRequest = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     try {
@@ -24,13 +26,13 @@ export default function Home() {
       const result = await url(inputValue)
       setUrlResult(result)
       setInputValue("")
-      setError("")
+      setError(false)
       setShow(true)
       setLoading(false)
     } catch (error) {
       console.log(error)
       setLoading(false)
-      setError(error)
+      setError(true)
       setShow(false)
     }
   }
