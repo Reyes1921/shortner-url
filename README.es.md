@@ -46,7 +46,7 @@ La aplicación se abre en el puerto 3000
 
 </div>
 
-# Contacto
+# ✉️ Contacto
 
 - Correo electrónico: reyesjrondon@gmail.com
 - [Portafolio](https://www.reyesrondon.dev/es)
