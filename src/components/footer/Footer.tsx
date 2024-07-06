@@ -38,13 +38,13 @@ export const Footer = () => {
                 src={icon.src}
                 height="12"
                 width="20"
-                className="filter invert"
+                className="dark:invert"
                 alt={icon.alt}
               />
             </a>
           ))}
         </div>
-        <p className="p-2"> Reyes Rondón</p>
+        <p className="p-2 text-black dark:text-white"> Reyes Rondón</p>
       </div>
     </footer>
   )

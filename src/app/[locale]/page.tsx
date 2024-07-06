@@ -39,7 +39,7 @@ export default function Home() {
   return (
     <div className="main animated fadeIn">
       <a href={dict("path")}>
-        <h1 className="text-5xl md:text-8xl mb-5 md:mb-5 md:mt-5 font-bold text-center textColor">
+        <h1 className="text-5xl md:text-8xl mb-5 md:mb-5 md:mt-5 font-bold text-center text-[#ff6d28]">
           Shortner Url
         </h1>
       </a>
@@ -49,7 +49,7 @@ export default function Home() {
             <div className="relative h-10">
               <input
                 type="text"
-                className="p-7 mt-3.5 peer w-full md:w-[560px] h-12 rounded-[7px] border border-blue-gray-200 bg-transparent px-3 py-2.5 text-xl font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 disabled:border-0 disabled:bg-blue-gray-50"
+                className="p-7 mt-3.5 peer w-full md:w-[560px] h-12 rounded-[7px] text-black dark:text-white  border border-black dark:border-white bg-transparent px-3 py-2.5 text-xl font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 disabled:border-0 disabled:bg-blue-gray-50"
                 placeholder=" "
                 onChange={handleInputChange}
                 value={inputValue}
@@ -65,7 +65,9 @@ export default function Home() {
         {error ? (
           <Error />
         ) : loading ? (
-          <span className="loader">{dict("loading")}</span>
+          <span className="loader text-black dark:text-white text-[48px] font-[400] relative">
+            {dict("loading")}
+          </span>
         ) : (
           <div className={` ${show ? "block" : "hidden"} animated fadeIn`}>
             <Results show={show} urlResult={urlResult} />

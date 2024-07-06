@@ -27,7 +27,7 @@ export const Info = () => {
   return (
     <div className="grid md:grid-cols-3 md:max-w-[850px] px-20 py-10 ">
       {icons.map((item) => (
-        <div key={item.title} className="flex flex-col items-center p-5">
+        <div key={item.title} className="flex flex-col items-center p-5 ">
           <Image
             className="flex justify-center"
             src={item.path}
@@ -36,7 +36,10 @@ export const Info = () => {
             alt={item.alt}
           />
           <h3 className="text-center text-2xl text-[#ff6d28]">{item.title}</h3>
-          <p className="text-center text-base"> {item.desc}</p>
+          <p className="text-center text-base text-black dark:text-white">
+            {" "}
+            {item.desc}
+          </p>
         </div>
       ))}
     </div>
