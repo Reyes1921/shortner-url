@@ -37,7 +37,7 @@ export default function Home() {
     }
   }
   return (
-    <div className="main animated fadeIn">
+    <div className="min-h-[calc(100vh_-_14vh)] md:min-h-[calc(100vh_-_22.5vh)] animated fadeIn">
       <a href={dict("path")}>
         <h1 className="text-5xl md:text-8xl mb-5 md:mb-5 md:mt-5 font-bold text-center text-[#ff6d28]">
           Shortner Url
@@ -56,7 +56,7 @@ export default function Home() {
               />
             </div>
             <div className="flex justify-center">
-              <button className="delete-button ml-3 p-2 mt-10 md:mt-0">
+              <button className="shortner-btn ml-3 p-2 mt-10 md:mt-0 bg-black text-[#ff6d28] text-[17px] border-1 border-black pb[7px] w-[90px] h-[75px] rounded-t-[15px] rounded-b-[12px] relative hover:border-[#ff6d28] hover:border-2 will-change-transform transition-all duration-[0.1s] ease-[ease-in-out] delay-[0s] select-none bg-[linear-gradient(_to_right,rgba(0,0,0,0.8),rgba(0,0,0,0)_),linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0))] bg-[bottom_right,bottom_right] bg-[100%_100%,100%_100%] bg-no-repeat shadow-[inset_-4px_-10px_0px_rgba(255,255,255,0.4),inset_-4px_-8px_0px_rgba(0,0,0,0.3),0px_2px_1px_rgba(0,0,0,0.3),0px_2px_1px_rgba(255,255,255,0.1)] after:content-[''] after:absolute after:bg-[linear-gradient(_to_bottom,rgba(255,255,255,0.2),rgba(0,0,0,0.5)_)] after:z-[-1] after:shadow-[inset_4px_0px_0px_rgba(255,255,255,0.1),inset_4px_-8px_0px_rgba(0,0,0,0.3)] after:transition-all after:duration-[0.1s] after:ease-[ease-in-out] after:delay-[0s] after:rounded-[15px] after:inset-0 before:content-[''] before:absolute before:bg-[linear-gradient(_to_right,rgba(0,0,0,0.8),rgba(0,0,0,0)_),linear-gradient(to_bottom,rgba(0,0,0,0.8),rgba(0,0,0,0))] before:bg-[bottom_right,bottom_right] before:bg-[100%_100%,100%_100%] before:bg-no-repeat before:z-[-1] before:transition-all before:duration-[0.1s] before:ease-[ease-in-out] before:delay-[0s] before:rounded-[15px] before:inset-0 active:will-change-transform active:h-[75px] active:shadow-[inset_-4px_-8px_0px_rgba(255,255,255,0.2),inset_-4px_-6px_0px_rgba(0,0,0,0.8),0px_1px_0px_rgba(0,0,0,0.9),0px_1px_0px_rgba(255,255,255,0.2)] active:transition-all active:duration-[0.1s] active:ease-[ease-in-out] active:delay-[0s] active:border-[0.25px] active:border-solid active:border-[rgba(0,0,0,0.2)] after:active:bg-[linear-gradient(_to_bottom,rgba(0,0,0,0.5),rgba(255,255,255,0.2)_)] active:before:content-[''] active:before:block active:before:absolute active:before:w-6/12 active:before:h-4/5 active:before:bg-[rgba(255,255,255,0.1)] active:before:animate-[overlay_0.1s_ease-in-out_0s] active:before:pointer-events-none active:before:left-[20%] active:before:top-[5%] transform: perspective(70px) rotateX(5deg) rotateY(0deg) hover:shadow-[inset_-4px_-8px_0px_rgba(255,255,255,0.2)] hover:outline-none">
                 {dict("button")}
               </button>
             </div>
@@ -65,7 +65,7 @@ export default function Home() {
         {error ? (
           <Error />
         ) : loading ? (
-          <span className="loader text-black dark:text-white text-[48px] font-[400] relative">
+          <span className="loader  text-black dark:text-white text-[48px] font-[400] relative inline-block after:content-[''] after:h-1 after:w-[0%] after:block after:animate-[5s_lineGrow_linear_infinite] after:bg-[#ff6d28]">
             {dict("loading")}
           </span>
         ) : (

@@ -12,7 +12,7 @@ export const Header = () => {
           href={dict("path")}
           className="flex justify-center md:justify-end"
         >
-          <button className="button-flag">
+          <button className="flex items-center cursor-pointer font-medium text-[17px] text-[white] tracking-wider pl-[0.9em] pr-[0.9em] py-[0.8em] mr-2 rounded-2xl border-2 border-solid border-transparent hover:border-[#ff6d28] hover:border-[solid]">
             <Image
               src={dict("logo")}
               height={25}
