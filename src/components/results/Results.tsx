@@ -26,7 +26,7 @@ export const Results: React.FC<ResultsProps> = ({show, urlResult}) => {
                 isReadOnly
                 hoverTip={results("copy")}
                 clickTip={results("copied")}
-                className="clipboardInput  "
+                className="clipboardInput"
               >
                 {urlResult?.shortUrl || ""}
               </ClipboardCopy>

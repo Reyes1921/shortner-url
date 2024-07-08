@@ -8,6 +8,10 @@
   }
 }
 
+[role="tooltip"] {
+  color: #ff6d28c2;
+}
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
