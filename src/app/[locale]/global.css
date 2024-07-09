@@ -32,32 +32,8 @@
   }
 }
 
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-}
-
-.animated {
-  -webkit-animation-duration: 2.5s;
-  animation-duration: 2.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
 .clipboardInput span.pf-v5-c-form-control.pf-m-readonly::before {
   border: 0px;
-}
-
-.shortner-btn:active {
-  will-change: transform;
-  transform: perspective(80px) rotateX(5deg) rotateY(1deg) translateY(3px)
-    scale(0.96);
-  height: 75px;
-  border: 0.25px solid rgba(0, 0, 0, 0.2);
-  box-shadow: inset -4px -8px 0px rgba(255, 255, 255, 0.2),
-    inset -4px -6px 0px rgba(0, 0, 0, 0.8), 0px 1px 0px rgba(0, 0, 0, 0.9),
-    0px 1px 0px rgba(255, 255, 255, 0.2);
-  transition: all 0.1s ease-in-out 0s;
 }
 
 @keyframes overlay {

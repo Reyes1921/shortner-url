@@ -18,7 +18,7 @@ export const Results: React.FC<ResultsProps> = ({show, urlResult}) => {
         <code
           className={` ${
             show ? "block" : "hidden"
-          } border-x-black dark:border-x-white animated fadeIn border text-sm sm:text-base inline-flex text-center items-center justify-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6 mt-2`}
+          } border-x-black dark:border-x-white [animation-duration:2.5s] [animation-fill-mode:both] [animation-name:fadeIn] border text-sm sm:text-base inline-flex text-center items-center justify-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6 mt-2`}
         >
           <span className="flex gap-4">
             <span className="flex-1 w-full md:w-[400px] ">
