@@ -20,6 +20,7 @@ Aplicación para acortar enlaces de forma fácil y rápida con seguimiento del n
 - [**Prettier**](https://prettier.io/) + [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - Formateador CSS.
 - [**next-intl**](https://next-intl-docs.vercel.app/) - Internacionalización de Next.js
 - [**Axios**](https://axios-http.com/) - Un sencillo cliente HTTP basado en promesas para el navegador y node.js
+- [**react-qr-code**](https://www.npmjs.com/package/react-qr-code) - Un componente para React. Esta biblioteca funciona con React y React Native (utilizando React Native SVG).
 
 ## 🔗 Repositorio backend
 

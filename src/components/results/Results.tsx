@@ -1,6 +1,7 @@
 import {UrlResponse} from "@/app/interfaces/urls"
 import {ClipboardCopy} from "@patternfly/react-core"
 import {useTranslations} from "next-intl"
+import QRCode from "react-qr-code"
 
 type ResultsProps = {
   show: boolean
@@ -43,13 +44,37 @@ export const Results: React.FC<ResultsProps> = ({show, urlResult}) => {
             {urlResult?.originalUrl}
           </p>
         </div>
-        <h3 className="text-xl font-bold mt-5 text-center text-[#ff6d28]">
-          {results("title_three")}
-        </h3>
-        <div id="result" className="mt-2 w-full break-all">
-          <p className="text-center text-black dark:text-white">
-            {urlResult?.clicks}
-          </p>
+        <div className="flex justify-around bg-[#1F2937] rounded-xl p-5 mt-5">
+          <div>
+            <h3 className="text-xl font-bold text-center text-[#ff6d28]">
+              {results("title_three")}
+            </h3>
+            <div id="result" className="mt-2 w-full break-all">
+              <p className="text-center text-black dark:text-white">
+                {urlResult?.clicks}
+              </p>
+            </div>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold text-center text-[#ff6d28] mb-5">
+              {results("title_four")}
+            </h3>
+            <div
+              style={{
+                height: "auto",
+                margin: "0 auto",
+                maxWidth: 64,
+                width: "100%",
+              }}
+            >
+              <QRCode
+                size={256}
+                style={{height: "auto", maxWidth: "100%", width: "150%"}}
+                value={urlResult?.shortUrl || ""}
+                viewBox={`0 0 256 256`}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </>

@@ -20,6 +20,7 @@ Application to shorten links in an easy and fast way with tracking of the number
 - [**Prettier**](https://prettier.io/) + [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - CSS formatter.
 - [**next-intl**](https://next-intl-docs.vercel.app/) - Internationalization for Next.js
 - [**Axios**](https://axios-http.com/) - A simple promise based HTTP client for the browser and node.js.
+- [**react-qr-code**](https://www.npmjs.com/package/react-qr-code) - A component for React. This library works with React and React Native (using React Native SVG).
 
 ## 🔗 Backend repository
 
