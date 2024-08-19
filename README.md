@@ -47,6 +47,10 @@ Application opens on port 3000
 
 </div>
 
+## Project page url:
+
+https://roadmap.sh/projects/url-shortening-service
+
 # ✉️ Contact
 
 - E-mail address: reyesjrondon@gmail.com
