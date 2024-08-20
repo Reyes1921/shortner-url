@@ -4,9 +4,9 @@
   },
   "Header": {
     "path": "/es",
-    "title": "English",
-    "logo": "/us.svg",
-    "alt": "Flag of United States"
+    "title": "Spanish",
+    "logo": "/es.svg",
+    "alt": "Flag of Spain"
   },
   "Home": {
     "button": "Shorten Url",
