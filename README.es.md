@@ -14,7 +14,7 @@ Aplicación para acortar enlaces de forma fácil y rápida con seguimiento del n
 ## 👨‍💻 Tecnologías utilizadas
 
 - [**React 18**](https://react.dev/) - La biblioteca para interfaces de usuario nativas y web.
-- [**Next.js 14**](https://nextjs.org/) - The React Framework for the Web
+- [**Next.js 14**](https://nextjs.org/) - El framework React para la Web.
 - [**TypeScript**](https://www.typescriptlang.org/) - TypeScript es un lenguaje de programación fuertemente tipado que se basa en JavaScript.
 - [**Tailwindcss**](https://tailwindcss.com/) - Framework de CSS para el diseño de páginas web.
 - [**Prettier**](https://prettier.io/) + [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - Formateador CSS.
