@@ -14,7 +14,7 @@ Application to shorten links in an easy and fast way with tracking of the number
 ## 👨‍💻 Technologies used
 
 - [**React 18**](https://react.dev/) - The library for web and native user interfaces.
-- [**Next.js 14**](https://nextjs.org/) - The React Framework for the Web
+- [**Next.js 14**](https://nextjs.org/) - The React Framework for the Web.
 - [**TypeScript**](https://www.typescriptlang.org/) - TypeScript is a strongly typed programming language that builds on JavaScript.
 - [**Tailwindcss**](https://tailwindcss.com/) - A utility-first CSS framework.
 - [**Prettier**](https://prettier.io/) + [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) - CSS formatter.
